@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Estimate | MRM Construction</title>
+  <meta name="description" content="Request a construction estimate from MRM Construction.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-grid">
+      <a href="services.html">Services overview</a>
+      <a href="gallery.html">Projects overview</a>
+      <a href="about.html">Launch checklist</a>
+    </div>
+  </div>
+  <header class="site-header compact">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="MRM Construction home">
+        <span class="brand-mark">MRM</span>
+        <span class="brand-lockup">
+          <span class="brand-text">Construction</span>
+          <span class="brand-subtext">Build. Renovate. Improve.</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav">
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Projects</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="about.html">About</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="estimate.html" class="button button-small active">Get Estimate</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Get Estimate</p>
+        <h1>Tell MRM About the Project So the First Follow-Up Is More Useful</h1>
+        <p>The form below is structured to collect the core details a contractor actually needs, and estimate requests now go directly to qrcmaxon@gmail.com.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container split">
+        <form class="lead-form light" action="https://formsubmit.co/qrcmaxon@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New MRM Construction Estimate Request">
+          <input type="hidden" name="_captcha" value="false">
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required>
+          </label>
+          <label>
+            City
+            <input type="text" name="city" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email">
+          </label>
+          <label>
+            Property Type
+            <select name="property_type">
+              <option>Single-Family Home</option>
+              <option>Multi-Family Property</option>
+              <option>Commercial Space</option>
+              <option>Office or Retail</option>
+              <option>Not Sure Yet</option>
+            </select>
+          </label>
+          <label>
+            Project Type
+            <select name="project_type">
+              <option>Renovation</option>
+              <option>Repair Work</option>
+              <option>Commercial Build-Out</option>
+              <option>Exterior Improvement</option>
+              <option>General Consultation</option>
+            </select>
+          </label>
+          <label>
+            Preferred Contact
+            <select name="preferred_contact">
+              <option>Phone Call</option>
+              <option>Text Message</option>
+              <option>Email</option>
+            </select>
+          </label>
+          <label>
+            Ideal Timeline
+            <select name="timeline">
+              <option>As soon as possible</option>
+              <option>Within 30 days</option>
+              <option>Within 3 months</option>
+              <option>Just comparing options</option>
+            </select>
+          </label>
+          <label class="full-width">
+            Project Details
+            <textarea name="details" rows="5" placeholder="Share the scope, current condition, goals, timing, and any details that will help MRM understand the job."></textarea>
+          </label>
+          <button class="button full-width" type="submit">Request Estimate</button>
+        </form>
+        <div class="detail-card">
+          <h2>Before Launch</h2>
+          <p>This page is ready structurally and already routes estimate requests to MRM's inbox through FormSubmit.</p>
+          <div class="stacked-actions">
+            <a class="button" href="services.html">Review Services</a>
+            <a class="button button-secondary" href="gallery.html">Review Projects</a>
+            <a class="button button-light" href="about.html">Open Launch Checklist</a>
+          </div>
+          <div class="mini-trust">
+            <span>Estimate-focused lead flow</span>
+            <span>Built for mobile visitors</span>
+            <span>Easy to personalize</span>
+          </div>
+          <h3>Suggested Instant Reply</h3>
+          <p>Thanks for reaching out to MRM Construction. Please send any project photos, your city, and a few details about the work so we can review the scope and follow up quickly.</p>
+          <h3>Next Details To Add</h3>
+          <p><strong>Phone:</strong> add MRM's main number</p>
+          <p><strong>Email:</strong> qrcmaxon@gmail.com</p>
+          <p><strong>Service area:</strong> add the cities or radius you actually serve</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><p>The estimate page is now the main conversion path across the site.</p><div class="visitor-counter"><span>Today's Visits</span><span class="visitor-counter-value" aria-live="polite">...</span></div></div>
+      <div><a href="index.html">Home</a><a href="services.html">Services</a></div>
+      <div><p>Estimate requests route to qrcmaxon@gmail.com.</p></div>
+    </div>
+  </footer>
+  <div class="mobile-cta">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Projects</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
